@@ -4,6 +4,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.Date;
 
 /**
@@ -20,7 +22,7 @@ import java.util.Date;
 @RequestMapping("/")
 public class IndexController {
     @GetMapping
-    String index() {
-        return "Hello Docker Wordl! " + new Date();
+    String index() throws UnknownHostException {
+        return "Hello Docker Wordl! " + new Date() + " " + InetAddress.getLocalHost().getHostAddress();
     }
 }
