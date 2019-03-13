@@ -9,7 +9,10 @@ services:
       - 8080
     networks:
       - network1
-    scale: 3
+    deploy:
+      replicas: 3
 
 networks:
   network1:
+
+#docker-compose up --build --scale demoweb=2
