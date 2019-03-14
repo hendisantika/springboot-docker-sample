@@ -9,9 +9,9 @@ services:
       - 8080
     networks:
       - network1
-    deploy:
-      replicas: 3
-      mode: replicated
+#    deploy:
+#      replicas: 3
+#      mode: replicated
 
 networks:
   network1:
