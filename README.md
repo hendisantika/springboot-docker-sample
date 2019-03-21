@@ -17,3 +17,7 @@
     ```
     docker-compose --compatibility up -d
     ```
+* Check the docker images
+    ```
+    docker ps
+    ```
