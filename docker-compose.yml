@@ -9,11 +9,12 @@ services:
       - 8080
     networks:
       - network1
-#    deploy:
-#      replicas: 3
-#      mode: replicated
+    deploy:
+      replicas: 3
+      mode: replicated
 
 networks:
   network1:
 
 #docker-compose up --build --scale demoweb=2
+#docker-compose --compatibility up -d

@@ -23,6 +23,6 @@ import java.util.Date;
 public class IndexController {
     @GetMapping
     String index() throws UnknownHostException {
-        return "Hello Docker Wordl! " + new Date() + " " + InetAddress.getLocalHost().getHostAddress();
+        return "Hello Docker World! " + new Date() + " " + InetAddress.getLocalHost().getHostAddress();
     }
 }
